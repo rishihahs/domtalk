@@ -6,9 +6,6 @@
   "directories": {
     "test": "test"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/rishihahs/domtalk.git"
@@ -24,5 +21,17 @@
   "homepage": "https://github.com/rishihahs/domtalk",
   "devDependencies": {
     "tape": "~2.3.2"
+  },
+  "testling": {
+    "files": "test/*.js",
+    "browsers": [
+      "ie/6..latest",
+      "chrome/4..latest",
+      "firefox/3..latest",
+      "safari/5.1..latest",
+      "opera/11.0..latest",
+      "iphone/6",
+      "ipad/6"
+    ]
   }
 }
