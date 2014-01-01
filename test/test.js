@@ -9,7 +9,7 @@ test('css selector from DOM element', function(t) {
     t.plan(1);
 
     var el = document.getElementsByTagName('a')[2];
-    var selector = 'body *:nth-child(1) *:nth-child(1) *:nth-child(1) *:nth-child(3) *:nth-child(1)';
+    var selector = '#container *:nth-child(1) *:nth-child(1) *:nth-child(3) *:nth-child(1)';
 
     t.equal(domtalk.getSelectorFromElement(el), selector);
 });

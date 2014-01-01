@@ -14,12 +14,14 @@ module.exports = {
 
         // See which index we are in parent. Array#indexOf could also be used here
         var children = parent.childNodes;
-        var index = -1;
+        var index = 0;
         for (var i = 0; i < children.length; i++) {
             if (children[i].nodeType === document.ELEMENT_NODE) {
                 if (children[i] === element) {
-                    index = i;
+                    break;
                 }
+
+                index++;
             }
         }
 
