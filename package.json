@@ -1,0 +1,25 @@
+{
+  "name": "domtalk",
+  "version": "0.0.1",
+  "description": "Generates CSS Selector for a DOM element",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rishihahs/domtalk.git"
+  },
+  "keywords": [
+    "dom"
+  ],
+  "author": "Rishi Shah <rishihahs@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rishihahs/domtalk/issues"
+  },
+  "homepage": "https://github.com/rishihahs/domtalk"
+}
