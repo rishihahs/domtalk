@@ -16,7 +16,8 @@ module.exports = {
         var children = parent.childNodes;
         var index = 0;
         for (var i = 0; i < children.length; i++) {
-            if (children[i].nodeType === document.ELEMENT_NODE) {
+            // nodeType is 1 if ELEMENT_NODE
+            if (children[i].nodeType === 1) {
                 if (children[i] === element) {
                     break;
                 }
