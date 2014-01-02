@@ -3,7 +3,9 @@ module.exports = {
     /** Get a CSS Selector from a DOM element by using a chain of nth-childs **/
     getSelectorFromElement: function(element) {
         // Top level elements are body and ones with an id
-        if (element.tagName.toUpperCase() === 'BODY') {
+        if (element === document.documentElement) {
+            return ':root';
+        } else if (element.tagName && element.tagName.toUpperCase() === 'BODY') {
             return 'body';
         } else if (element.id) {
             return '#' + element.id;
